@@ -1,0 +1,31 @@
+a.back_to_top{
+	position: fixed;
+	bottom: 5vh;
+	right: 5vw;
+	width:60px;
+	height: 60px;
+	background: mediumvioletred;
+	border-radius: 50%;
+	display: block;
+}
+a.back_to_top div{
+	width:40px;
+	height: 40px;
+	padding:10px;
+	line-height: 20px;
+	letter-spacing: 4px;
+	font-weight: 600;
+	color:lightgray;
+}
+.back_to_top:focus div{
+	color:white;
+}
+
+@media screen and (max-width:900px) {
+	div.back_to_top {
+		display: block;
+	}
+	a.back_to_top div{
+		letter-spacing: 1px;
+	}
+}

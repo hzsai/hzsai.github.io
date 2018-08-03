@@ -1,0 +1,204 @@
+.xk {
+	width: 100vw;
+	height: auto;
+}
+
+.xk .notebook {
+	width: 1200px;
+	margin: 0 auto;
+	/*background: yellowgreen;*/
+}
+
+.xk .notebook .note {
+	width: 950px;
+}
+
+.xk .notebook .notetop {
+	margin: 0 auto;
+	width: 910px;
+	height: 200px;
+	background-image: url(../img/notetop.png);
+	background-repeat: no-repeat;
+	background-size: 1000px 200px;
+	background-position: -60px 0;
+	transition: all 1s;
+}
+
+.xk .notebook .notemid {
+	margin: 0 auto;
+	width: 902px;
+	/*	height: 200px;*/
+	background-image: url(../img/notemiddle.png);
+	background-repeat: repeat-y;
+	background-size: 992px 200px;
+	background-position: -60px 0;
+	transition:all 1s;
+}
+.xk .notebook .notemid:after{
+	display: block;
+	content: "";
+	clear:both;
+}
+
+.xk .notebook .notebot {
+	margin: 0 auto;
+	width: 902px;
+	height: 200px;
+	background-image: url(../img/notebot.png);
+	background-repeat: no-repeat;
+	background-size: 992px 200px;
+	background-position: -60px 0;
+	transition: all 1s;
+}
+
+
+/*下拉菜单*/
+
+.xk .notebook .notemid .detail {
+	width: 100px;
+	height: 40px;
+	background: #00aeef;
+	border-radius: 5px;
+	position: relative;
+	float: right;
+	right: 5vw;
+	box-shadow: 0 0 2px rgba(20, 20, 20, 0.9);
+}
+
+.xk .notebook .notemid .detail p {
+	line-height: 40px;
+	text-align: center;
+	font-weight: 550;
+	color: #232636;
+	letter-spacing: 2px;
+}
+
+.xk .notebook .detail .xiala {
+	width: 150px;
+	border-radius: 5px;
+	position: absolute;
+	top: 41px;
+	left: -25px;
+	background: #00aeef;
+	/*display: block;*/
+	box-shadow: 0 0 2px rgba(20, 20, 20, 0.9);
+	visibility: none;
+	opacity: 0;
+}
+
+.xk .notebook .detail .xiala li {
+	height: 30px;
+	text-align: center;
+}
+
+.xk .notebook .detail .xiala li:nth-of-type(1) {
+	border-bottom: 1px solid rgba(225, 203, 122, 0.85);
+}
+
+.xk .notebook .detail .xiala li:nth-of-type(2) {
+	border-top: 1px solid rgba(15, 24, 93, 0.15);
+	border-bottom: 1px solid rgba(225, 203, 122, 0.85);
+}
+
+.xk .notebook .detail .xiala li:nth-of-type(3) {
+	border-top: 1px solid rgba(15, 24, 93, 0.15);
+}
+
+.xk .notebook .detail .xiala li a {
+	line-height: 30px;
+	width: 100%;
+	display: block;
+	color: #232636;
+}
+
+
+/*点击事件*/
+
+.xk .notebook .notemid .detail:hover .xiala {
+	visibility: visible;
+	opacity: 1;
+	transition: all 1s;
+}
+
+.xk .notebook .notemid .detail:hover p {
+	background: rgba(255, 255, 255, 0.2);
+	color: #694776;
+}
+
+.xk .notebook .notemid .detail .xiala li:hover {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.xk .notebook .notemid .detail .xiala li:hover a {
+	color: #694776;
+}
+
+.xk .notebook .wenzi:before {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.xk .notebook .wenzi {
+	width: 800px;
+	padding: 20px 0;
+	height: auto;
+	margin: 0 auto;
+	color: #170a3f;
+	font-size: 19px;
+	font-weight: 500;
+}
+
+.xk .notebook .wenzi h1 {
+	letter-spacing: 2px;
+	margin: 0;
+	padding: 50px 0 50px 0;
+	text-align: center;
+}
+
+.xk .notebook .wenzi .jingzhun {
+	display: none;
+}
+
+.xk .notebook .wenzi .jingzhun p {
+	text-indent: 2em;
+	line-height: 2em;
+}
+
+.xk .notebook .wenzi .jingzhun img {
+	width: 170px;
+	height: 150px;
+}
+
+.xk .notebook .wenzi .lr {
+	width: 250px !important;
+}
+
+.lf {
+	float: left;
+}
+
+.ri {
+	float: right;
+}
+
+
+/*页面翻转箭头*/
+
+.xk .notemid .lfjiantou {
+	position: relative;
+	right: 50px;
+	float: right;
+	width: 55px;
+	height: 45px;
+	background: url(../img/jiantou.png);
+	background-position: -161px -176px;
+	background-repeat: no-repeat;
+	background-size: 300px 300px;
+	display: none;
+}
+.xk .notemid .lfjiantou a{
+	display:block;
+	width: 100%;
+	height: 100%;
+}

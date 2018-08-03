@@ -1,0 +1,77 @@
+
+.something {
+	width: 5rem;
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
+	transition: all 0.5s;
+	position: relative;
+}
+
+.something h1 {
+	font-size: 5rem;
+	color: white;
+	font-weight: 700;
+	width:42rem;
+	margin: 0 auto;
+	position:relative;
+	right: 350%;
+	text-shadow: 0 0 1px rgba(20,20,20,0.6);
+}
+.PC{
+	display: block;
+	margin: 50vh auto;
+}
+.PHONE{
+	display: none;
+}
+.something:hover {
+	transform: rotate(360deg);
+}
+
+
+
+
+/*固定栏*/
+div.guding{
+	width:1200px;
+	height: 500px;
+	/*background: lightblue;*/
+	margin:10px auto;
+	background:url(../img/zgm.jpg);
+	background-attachment: fixed;
+	background-size:cover;
+}
+
+.guding div.shadow{
+	position: relative;
+	width:100%;
+	height: 100%;
+	background-color: none;
+	text-align: center;
+	/*line-height: 500px;*/
+	color:navajowhite;
+	font-weight: 700;
+	font-size: 0;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.guding div.shadow p{
+	padding: 0;
+	margin: 0;
+	text-shadow: 0 0 15px rgba(255,255,255,0.5);
+	position: absolute;
+}
+.guding div.shadow p:first-of-type{
+	left:10vw;
+	top:5vh;
+}
+.guding div.shadow p:last-of-type{
+	right:10vw;
+	bottom:5vh;
+}
+
+.guding:hover .shadow{
+	background-color: rgba(20,20,20,0.5);
+	opacity: 1;
+	font-size:7rem;
+}

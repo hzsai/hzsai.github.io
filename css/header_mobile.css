@@ -1,0 +1,48 @@
+@media screen and (max-width:900px)
+{
+	
+	
+	div.menu{
+		margin-top: 5px;
+		height: auto;
+		position: relative;
+	}
+	div.menu .nav{
+		width:100vw;
+		height:auto;
+	}
+	div.menu .nav li{
+		display: block;
+		float:none;
+		text-align: center;
+		line-height: 3rem;
+		border-bottom: 1px solid rgba(255,255,255,0.15);
+	}
+	div.menu .nav li:after{
+		content: "";
+	}
+	div.menu .menu_right{
+		float: none;
+		
+	}
+	div.menu .nav li a{
+		font-size:1.2rem;
+		color:white;
+	}
+	div.menu .nav div.drop_div{
+		top:9rem;
+	}
+	div.menu .nav .drop_div a{
+		width:50px;
+		height:50px;
+		margin:0 20px 40px 20px;
+	}
+	div.menu .drop_div a p{
+		display: none;
+	}
+	div.menu .nav .drop_div a img{
+		width:50px;
+		height: auto;
+	}
+	
+}
