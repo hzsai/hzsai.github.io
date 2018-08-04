@@ -32,12 +32,13 @@
 	background-repeat: repeat-y;
 	background-size: 992px 200px;
 	background-position: -60px 0;
-	transition:all 1s;
+	transition: all 1s;
 }
-.xk .notebook .notemid:after{
+
+.xk .notebook .notemid:after {
 	display: block;
 	content: "";
-	clear:both;
+	clear: both;
 }
 
 .xk .notebook .notebot {
@@ -160,9 +161,17 @@
 	display: none;
 }
 
-.xk .notebook .wenzi .jingzhun p {
-	text-indent: 2em;
-	line-height: 2em;
+.xk .notebook .wenzi .jingzhun p,
+strong,
+h5 {
+	text-indent: 2rem;
+	line-height: 2rem;
+	margin: 0;
+}
+
+.xk .notebook .wenzi .jingzhun strong {
+	display: block;
+	line-height: 6rem;
 }
 
 .xk .notebook .wenzi .jingzhun img {
@@ -197,8 +206,9 @@
 	background-size: 300px 300px;
 	display: none;
 }
-.xk .notemid .lfjiantou a{
-	display:block;
+
+.xk .notemid .lfjiantou a {
+	display: block;
 	width: 100%;
 	height: 100%;
 }

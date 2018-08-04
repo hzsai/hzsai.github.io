@@ -9,7 +9,7 @@ a.back_to_top{
 	display: block;
 }
 a.back_to_top div{
-	width:40px;
+	/*width:40px;*/
 	height: 40px;
 	padding:10px;
 	line-height: 20px;
