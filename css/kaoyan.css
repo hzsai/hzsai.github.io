@@ -1,0 +1,35 @@
+.lrjiantou,.lfjiantou{
+	cursor: pointer;
+}
+.ggc{
+	display: none;
+}
+.ggcontent{
+	padding-bottom: 15vh;
+}
+.lfjiantou {
+	position: relative;
+	left: 50px;
+	float:left;
+	width: 55px;
+	height: 45px;
+	background: url(../img/jiantou.png);
+	background-position: -161px -176px;
+	background-repeat: no-repeat;
+	background-size: 300px 300px;
+	display: none;
+	transform: rotateY(180deg);
+}
+
+.lrjiantou {
+	position: relative;
+	right: 50px;
+	float:right;
+	width: 55px;
+	height: 45px;
+	background: url(../img/jiantou.png);
+	background-position: -161px -176px;
+	background-repeat: no-repeat;
+	background-size: 300px 300px;
+	display: none;
+}
