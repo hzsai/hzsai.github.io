@@ -1,0 +1,42 @@
+#head-lunbo .carousel-inner img {
+	
+	/* fit with the banner 88%*/
+	width: 88%;
+	height: 450px;
+	margin-left: 6%;
+	margin-top: 1%;
+	margin-right: 2%;
+
+	border-radius: 6px;
+}
+
+#head-lunbo .read-head {
+	transition: 0.2s;
+	font-size: 1rem;
+	color: #0f0f0f;
+}
+
+#real-content {
+	font-size: 4rem;
+	font-weight: 1.5rem;
+	color: #ffdc00;
+}
+
+/*
+	cube-bezier(.54, 1.11, .87, .99);
+*/
+
+#real-content {
+	position: relative;
+	left: -20px;
+    opacity: 0;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+
+#real-content.animate {
+	position: relative;
+	left: 0;
+	opacity: 1;
+}
