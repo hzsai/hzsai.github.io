@@ -9,7 +9,7 @@ div.menu{
 	position:-webkit-sticky;
 	display:none;
 	/*padding-top:20px;*/
-	width:100%;
+	width:100% ;
 	height: 40px;
 	/*background: burlywood;*/
 	top:0;
