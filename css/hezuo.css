@@ -68,3 +68,9 @@ div.content .box img{
 .content .box:hover{
 	background:rgba(100,100,100,0.5);
 }
+
+@media screen and (max-width:900px) {
+div.content .box{
+	width:100%;
+}	
+}
