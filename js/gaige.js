@@ -10,64 +10,52 @@ $(document).ready(function() {
 	//点击的次数
 	var num = 0;
 	var n = 0;
-
 	snag1.click(function() {
 		n++;
 		if(n%2!=0){
-			cho1.animate({left:'0'});
-			cho2.css("left","90%");
-			cho3.css("left","90%");
-			cho4.css("left","90%");
+			cho1.css("visibility","visible").animate({left:'0'});
+			cho2.css("left","90%").css("visibility","hidden");
+			cho3.css("left","90%").css("visibility","hidden");
+			cho4.css("left","90%").css("visibility","hidden");
 		}
 		else{
-			cho1.css("left","90%");
+			cho1.css("left","90%").css("visibility","hidden");
 		}
 	});
 	snag2.click(function() {
 		n++;
 		if(n%2!=0){
-			cho2.animate({left:'0'});
-			cho1.css("left","90%");
-			cho3.css("left","90%");
-			cho4.css("left","90%");
+			cho2.css("visibility","visible").animate({left:'0'});
+			cho1.css("left","90%").css("visibility","hidden");
+			cho3.css("left","90%").css("visibility","hidden");
+			cho4.css("left","90%").css("visibility","hidden");
 		}
 		else{
-			cho2.css("left","90%");
+			cho2.css("left","90%").css("visibility","hidden");
 		}
 	});
 	snag3.click(function() {
 		n++;
 		if(n%2!=0){
-			cho3.animate({left:'0'});
-			cho2.css("left","90%");
-			cho1.css("left","90%");
-			cho4.css("left","90%");
+			cho3.css("visibility","visible").animate({left:'0'});
+			cho2.css("left","90%").css("visibility","hidden");
+			cho1.css("left","90%").css("visibility","hidden");
+			cho4.css("left","90%").css("visibility","hidden");
 		}
 		else{
-			cho3.css("left","90%");
+			cho3.css("left","90%").css("visibility","hidden");
 		}
 	});
 	snag4.click(function() {
 		n++;
 		if(n%2!=0){
-			cho4.animate({left:'0'});
-			cho2.css("left","90%");
-			cho1.css("left","90%");
-			cho3.css("left","90%");
+			cho4.css("visibility","visible").animate({left:'0'});
+			cho2.css("left","90%").css("visibility","hidden");
+			cho1.css("left","90%").css("visibility","hidden");
+			cho3.css("left","90%").css("visibility","hidden");
 		}
 		else{
-			cho4.css("left","90%");
+			cho4.css("left","90%").css("visibility","hidden");
 		}
 	});
-//		for(n=1;n<=4;n++){
-//			$(snag+n).click(function() {
-//				n++;
-//				if(n%2!=0){
-//					$(cho+n).css("left","auto");
-//				}
-//				else{
-//					$(cho+n).css("left","80%");
-//				}
-//			});
-//		}
 });
