@@ -40,3 +40,43 @@
 	left: 0;
 	opacity: 1;
 }
+
+.forhead {
+	color: #ddc22d;
+	margin-bottom: 40px;
+}
+
+@-webkit-keyframes redanimations{
+    0%{box-shadow:0 0 10px 2px rgba(191,2,2,.8);}
+    50%{box-shadow:0 0 10px 2px rgba(191,2,2,.3);}
+    100%{box-shadow:0 0 10px 2px rgba(191,2,2,.8);}
+}
+@-moz-keyframes redanimations{/* Firefox */
+    0%{box-shadow:0 0 10px 2px rgba(191,2,2,.8);}
+    50%{box-shadow:0 0 10px 2px rgba(191,2,2,.3);}
+    100%{box-shadow:0 0 10px 2px rgba(191,2,2,.8);}
+}
+@keyframes redanimations{
+    0%{box-shadow:0 0 10px 2px rgba(191,2,2,.8);}
+    50%{box-shadow:0 0 10px 2px rgba(191,2,2,.3);}
+    100%{box-shadow:0 0 10px 2px rgba(191,2,2,.8);}
+}
+
+
+#head-lunbo .carousel-inner .carousel-item .carousel-caption .guide_head {
+	margin: 0 auto;
+	display: block;
+}
+
+#head-lunbo .carousel-inner .carousel-item .carousel-caption .guide_head img {
+	width: 90px;
+	height: 90px;
+	margin: 0 auto;
+	border-radius: 50%;
+	background-color: #cfcfcf;
+	-moz-animation: redanimations 2s ease infinite;
+	-webkit-animation: redanimations 2s ease infinite;
+	-o-animation: redanimations 2s ease infinite;
+	-ms-animation: redanimations 2s ease infinite;
+	animation: redanimations 2s ease infinite;
+}
