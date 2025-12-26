@@ -43,6 +43,12 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      - name: Npm build
+        run: npm install && npm run build
+      - name: Change gitignore
+        run:  sed -i "/.*\/dist$/d" .gitignore
+      - name: Add assert
+        run: git add assets/js/dist -f
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
